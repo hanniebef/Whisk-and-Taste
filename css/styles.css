@@ -1,0 +1,24 @@
+
+
+.navbar-brand {
+    font-family: "Playball", cursive;
+    font-size: 2em;
+    font-style: normal;
+}
+
+.col-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(193, 220, 226);
+}
+
+.textfront {
+    font-family: "Playfair";
+    text-align: center;
+}
+
+.pfront {
+    font-family: "Afacad Flux", sans-serif;
+    text-align: justify;
+}
