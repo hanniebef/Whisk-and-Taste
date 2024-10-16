@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-.col-4 {
+.col-3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,3 +22,19 @@
     font-family: "Afacad Flux", sans-serif;
     text-align: justify;
 }
+
+.gallery-img {
+    padding: 15px; 
+    text-align: center;
+  }
+
+  .gallery-text {
+    font-family: "Playfair";
+    text-align: center; 
+    margin-bottom: 5px; 
+    font-size: 16px; 
+  }
+
+  h2 {
+    font-family: "Playfair";
+  }
