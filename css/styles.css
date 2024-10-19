@@ -38,3 +38,50 @@
   h2 {
     font-family: "Playfair";
   }
+
+/* CARRUSEL */
+
+.center {
+  overflow: hidden; 
+}
+
+.slick-carousel {
+  display: flex; 
+  justify-content: center; 
+}
+
+.slick-slide {
+  margin: 0 10px; 
+}
+
+/* FIND THE PERFECT RECIPE */
+
+  .icon-button {
+    font-size: 40px; 
+    cursor: pointer; 
+    transition: transform 0.3s; 
+    text-align: center;
+  }
+  
+  .icon-button:hover {
+    transform: scale(1.2); 
+  }
+  
+  .container-fluid {
+    padding: 0; /* Asegúrate de que no haya margen interno que afecte el ancho */
+  }
+  
+  .row {
+    margin: 0; /* Elimina márgenes en la fila para ocupar todo el ancho */
+  }
+  
+
+
+
+
+ 
+
+
+  
+
+  

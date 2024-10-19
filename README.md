@@ -1,4 +1,5 @@
 # Whisk-and-Taste
 
 
-https://kenwheeler.github.io/slick/
+-Arreglar botones de carrusel
+-Scroll horizontal
