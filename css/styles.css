@@ -68,11 +68,11 @@
   }
   
   .container-fluid {
-    padding: 0; /* Asegúrate de que no haya margen interno que afecte el ancho */
+    padding: 0; 
   }
   
   .row {
-    margin: 0; /* Elimina márgenes en la fila para ocupar todo el ancho */
+    margin: 0; 
   }
   
 
