@@ -173,6 +173,23 @@
 .row {
     margin: 0; 
 }
+
+/* PUMPKIN PIE */
+
+.textfront {
+  font-size: 36px; 
+  font-family: "Playfair Display", serif;
+  line-height: 1.2; 
+}
+
+.pfront {
+  font-size: 16px; 
+  font-family: "Afacad Flux", sans-serif;
+  text-align: justify; 
+  padding-right: 200px; 
+  margin-left: -15px; 
+}
+
   
 
 
