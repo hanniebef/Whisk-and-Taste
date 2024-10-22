@@ -27,5 +27,22 @@
       ]
     });
   });
+
+  // NAVBAR
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  document.querySelectorAll('.dropdown-menu .dropdown-submenu').forEach(function (element) {
+      element.addEventListener('mouseover', function (e) {
+          let submenu = element.querySelector('.dropdown-menu');
+          if (submenu) submenu.classList.add('show');
+      });
+      element.addEventListener('mouseleave', function (e) {
+          let submenu = element.querySelector('.dropdown-menu');
+          if (submenu) submenu.classList.remove('show');
+      });
+  });
+});
+
   
   
