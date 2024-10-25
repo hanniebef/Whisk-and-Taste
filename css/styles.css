@@ -29,17 +29,13 @@
   background-color: #f8f9fa; 
 }
 
-.search-btn {
-  background-color: rgb(193, 220, 226);
-  border: none; /* Elimina el borde si no lo deseas */
-  color: black; /* Color del texto */
-  transition: background-color 0.3s, color 0.3s, border 0.3s; /* Transiciones suaves */
+.btn-outline-custom {
+  color: rgb(193, 220, 226);
+  border-color: rgb(193, 220, 226);
 }
-
-.search-btn:hover {
-  background-color: white; /* Color de fondo al hacer hover */
-  color: rgb(193, 220, 226); /* Color del texto al hacer hover */
-  border: 2px solid rgb(193, 220, 226); /* Bordes de color al hacer hover */
+.btn-outline-custom:hover {
+  background-color: rgb(193, 220, 226); 
+  color: #000; 
 }
 
 /* IMAGEN */
@@ -74,6 +70,12 @@
     text-align: center;
   }
 
+  .img-fluid {
+    width:300px;
+    height: 250px;
+    object-fit: cover;
+  }
+
   .hovereffect h2 {
     text-transform: uppercase;
     color: #fff;
@@ -105,7 +107,7 @@
   }
 
   .hovereffect {
-    width: 100%;
+    width: fit-content;
     height: 100%;
     float: left;
     overflow: hidden;
@@ -170,6 +172,18 @@
   margin: 0 10px; 
 }
 
+
+.slick-prev {
+  left: 25px;
+  z-index: 2;
+}
+
+.slick-next {
+  right: 25px;
+  z-index: 2;
+}
+
+
 /* FIND THE PERFECT RECIPE */
 
 .icon-button {
@@ -204,12 +218,14 @@
 }
 
 .vertical-line {
-  width: 2px; /* Ancho de la línea vertical */
-  background-color: #cccccc; /* Color de la línea */
-  height: 100%; /* Altura de la línea igual a la sección de Nutrition Facts */
-  margin-left: 10px; /* Margen a la izquierda de la línea */
-  margin-right: 10px; /* Margen a la derecha de la línea */
+  width: 2px; 
+  background-color: #cccccc; 
+  height: 100%; 
+  margin-left: 10px; 
+  margin-right: 10px; 
 }
+
+
 
 
 
