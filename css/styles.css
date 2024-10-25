@@ -29,6 +29,19 @@
   background-color: #f8f9fa; 
 }
 
+.search-btn {
+  background-color: rgb(193, 220, 226);
+  border: none; /* Elimina el borde si no lo deseas */
+  color: black; /* Color del texto */
+  transition: background-color 0.3s, color 0.3s, border 0.3s; /* Transiciones suaves */
+}
+
+.search-btn:hover {
+  background-color: white; /* Color de fondo al hacer hover */
+  color: rgb(193, 220, 226); /* Color del texto al hacer hover */
+  border: 2px solid rgb(193, 220, 226); /* Bordes de color al hacer hover */
+}
+
 /* IMAGEN */
 
 .col-6 {
@@ -186,12 +199,17 @@
   font-size: 16px; 
   font-family: "Afacad Flux", sans-serif;
   text-align: justify; 
-  padding-right: 200px; 
+  padding-right: 120px; 
   margin-left: -15px; 
 }
 
-  
-
+.vertical-line {
+  width: 2px; /* Ancho de la línea vertical */
+  background-color: #cccccc; /* Color de la línea */
+  height: 100%; /* Altura de la línea igual a la sección de Nutrition Facts */
+  margin-left: 10px; /* Margen a la izquierda de la línea */
+  margin-right: 10px; /* Margen a la derecha de la línea */
+}
 
 
 
