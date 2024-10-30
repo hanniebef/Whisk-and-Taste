@@ -408,103 +408,79 @@
   </div>
 </div>
 
-<!-- MEMBER'S FAVORITES! -->
 
-<div class="container-fluid m-0 p-0 my-4">
-  <div class="row justify-content-center mt-4">
-    <div class="col-12 p-0">
-      <div class="w-100 py-3 text-center" style="background-color: rgb(193, 220, 226);">
-        <h2 class="mb-0">Member's Favorites!</h2>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- MEMBERS -->
 
-<div class="row justify-content-center">
-    
-  <!-- Miso Salmon with Roasted Veggies -->
-  <div class="col-md-3 col-sm-6 d-flex justify-content-center">
-    <div class="hovereffect">
-      <img src="media-2/grilled-salmon.jpg" class="img-fluid rounded" alt="Miso Salmon with Roasted Veggies">
-      <div class="overlay">
-        <h2>Miso Salmon with Roasted Veggies</h2>
-        <button class="info btn btn-light" data-bs-toggle="modal" data-bs-target="#modal7">Info</button>
+<div class="container">
+  <!-- Images Filter Buttons Section -->
+  <div class="row mt-5" id="filter-buttons">
+      <div class="col-12">
+          <button class="btn mb-2 me-1 active" data-filter="all">Show all</button>
+          <button class="btn mb-2 mx-1" data-filter="salmon">Salmon</button>
+          <button class="btn mb-2 mx-1" data-filter="zucchini">Zucchini</button>
+          <button class="btn mb-2 mx-1" data-filter="focaccia">Focaccia</button>
+          <button class="btn mb-2 mx-1" data-filter="pasta">Pasta</button>
+          <button class="btn mb-2 mx-1" data-filter="quiche">Quiche</button>
+          <button class="btn mb-2 mx-1" data-filter="cake">Cake</button>
       </div>
-    </div>
   </div>
 
-  <!-- Stuffed Zucchini with Chicken -->
-  <div class="col-md-3 col-sm-6 d-flex justify-content-center">
-    <div class="hovereffect">
-      <img src="media-2/grilled-zucchini.jpg" class="img-fluid rounded" alt="Stuffed Zucchini with Chicken">
-      <div class="overlay">
-        <h2>Stuffed Zucchini with Chicken</h2>
-        <button class="info btn btn-light" data-bs-toggle="modal" data-bs-target="#modal8">Info</button>
+  <!-- Filterable Images / Cards Section -->
+  <div class="row px-2 mt-4 gap-3" id="filterable-cards">
+      <!-- Miso Salmon with Roasted Veggies -->
+      <div class="card p-0" data-name="salmon">
+          <img src="media-2/grilled-salmon.jpg" alt="Miso Salmon with Roasted Veggies" class="img-fluid">
+          <div class="card-body">
+              <h6 class="card-title">Miso Salmon with Roasted Veggies</h6>
+          </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Veggie Focaccia -->
-  <div class="col-md-3 col-sm-6 d-flex justify-content-center">
-    <div class="hovereffect">
-      <img src="media-2/focaccia.jpg" class="img-fluid rounded" alt="Veggie Focaccia">
-      <div class="overlay">
-        <h2>Veggie Focaccia</h2>
-        <button class="info btn btn-light" data-bs-toggle="modal" data-bs-target="#modal9">Info</button>
+      <!-- Stuffed Zucchini with Chicken -->
+      <div class="card p-0" data-name="zucchini">
+          <img src="media-2/grilled-zucchini.jpg" alt="Stuffed Zucchini with Chicken" class="img-fluid">
+          <div class="card-body">
+              <h6 class="card-title">Stuffed Zucchini with Chicken</h6>
+          </div>
       </div>
-    </div>
-  </div>
 
-</div>
-
-<!-- Segunda fila de imágenes -->
-<div class="row justify-content-center mt-4">
-
-  <!-- Tomato Pasta with Meatballs -->
-  <div class="col-md-3 col-sm-6 d-flex justify-content-center">
-    <div class="hovereffect">
-      <img src="media-2/meatballs.jpg" class="img-fluid rounded" alt="Tomato Pasta with Meatballs">
-      <div class="overlay">
-        <h2>Tomato Pasta with Meatballs</h2>
-        <button class="info btn btn-light" data-bs-toggle="modal" data-bs-target="#modal10">Info</button>
+      <!-- Veggie Focaccia -->
+      <div class="card p-0" data-name="focaccia">
+          <img src="media-2/focaccia.jpg" alt="Veggie Focaccia" class="img-fluid">
+          <div class="card-body">
+              <h6 class="card-title">Veggie Focaccia</h6>
+          </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Vegan Quiche -->
-  <div class="col-md-3 col-sm-6 d-flex justify-content-center">
-    <div class="hovereffect">
-      <img src="media-2/vegan-quiche.jpg" class="img-fluid rounded" alt="Vegan Quiche">
-      <div class="overlay">
-        <h2>Vegan Quiche</h2>
-        <button class="info btn btn-light" data-bs-toggle="modal" data-bs-target="#modal11">Info</button>
+      <!-- Tomato Pasta with Meatballs -->
+      <div class="card p-0" data-name="pasta">
+          <img src="media-2/meatballs.jpg" alt="Tomato Pasta with Meatballs" class="img-fluid">
+          <div class="card-body">
+              <h6 class="card-title">Tomato Pasta with Meatballs</h6>
+          </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Lemon and Cream Cake -->
-  <div class="col-md-3 col-sm-6 d-flex justify-content-center">
-    <div class="hovereffect">
-      <img src="media-2/lemon-and-cream-cake.jpg" class="img-fluid rounded" alt="Lemon Cake and Cream Cake">
-      <div class="overlay">
-        <h2>Lemon and Cream Cake</h2>
-        <button class="info btn btn-light" data-bs-toggle="modal" data-bs-target="#modal12">Info</button>
+      <!-- Vegan Quiche -->
+      <div class="card p-0" data-name="quiche">
+          <img src="media-2/vegan-quiche.jpg" alt="Vegan Quiche" class="img-fluid">
+          <div class="card-body">
+              <h6 class="card-title">Vegan Quiche</h6>
+          </div>
       </div>
-    </div>
-  </div>
 
-</div>
-</div>
-
-<!-- Load More Button -->
-<div class="row justify-content-center mt-4">
-  <div class="col-12 text-center">
-    <button type="button" class="btn btn-light border border-dark">Load More</button>
+      <!-- Lemon and Cream Cake -->
+      <div class="card p-0" data-name="cake">
+          <img src="media-2/lemon-and-cream-cake.jpg" alt="Lemon and Cream Cake" class="img-fluid">
+          <div class="card-body">
+              <h6 class="card-title">Lemon and Cream Cake</h6>
+          </div>
+      </div>
   </div>
 </div>
 
 
-<!-- MODALES 2 -->
+
+
+<!-- MODALES 2
 
 <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -639,7 +615,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <br>
 
