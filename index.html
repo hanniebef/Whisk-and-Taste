@@ -16,7 +16,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
    <!-- ICONS -->
-   <script src="https://kit.fontawesome.com/17e7859910.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    
    <!-- AOS CSS (Animations) -->
    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
@@ -25,7 +25,6 @@
    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
    
-
 
 
 
@@ -38,10 +37,10 @@
 <body>
 
 <!-- NAVBAR -->
-
-<nav class="navbar navbar-expand-lg" style="background-color: white;">
+<nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Whisk and Taste</a>
+    <div class="navbar-divider"></div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
       aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -49,50 +48,51 @@
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recipes</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Entrées</a></li>
-              <li><a class="dropdown-item" href="#">Meals</a></li>
-              <li><a class="dropdown-item" href="#">Snacks</a></li>
-              <li><a class="dropdown-item" href="#">Sweets</a></li>
-              <li><a class="dropdown-item" href="#">Drinks</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Others</a></li>
-            </ul>
-              </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Diet</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Vegetarian</a></li>
-                  <li><a class="dropdown-item" href="#">Vegan</a></li>
-                  <li><a class="dropdown-item" href="#">Paleo</a></li>
-                  <li><a class="dropdown-item" href="#">Keto</a></li>
-                  <li><a class="dropdown-item" href="#">Gluten Free</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li class="dropdown-item dropdown-submenu">
-                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Others</a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Pescatarian</a></li>
-                        <li><a class="dropdown-item" href="#">Lactose Free</a></li>
-                        <li><a class="dropdown-item" href="#">Carnivore</a></li>
-                      </ul>
-                      </li>
-                  </ul>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-              </li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Entrées</a></li>
+            <li><a class="dropdown-item" href="#">Meals</a></li>
+            <li><a class="dropdown-item" href="#">Snacks</a></li>
+            <li><a class="dropdown-item" href="#">Sweets</a></li>
+            <li><a class="dropdown-item" href="#">Drinks</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Others</a></li>
           </ul>
-          <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button type="button" class="btn btn-outline-custom">Search</button>
-          </form>
-      </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Diet</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Vegetarian</a></li>
+            <li><a class="dropdown-item" href="#">Vegan</a></li>
+            <li><a class="dropdown-item" href="#">Paleo</a></li>
+            <li><a class="dropdown-item" href="#">Keto</a></li>
+            <li><a class="dropdown-item" href="#">Gluten Free</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li class="dropdown-item dropdown-submenu">
+              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Others</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Pescatarian</a></li>
+                <li><a class="dropdown-item" href="#">Lactose Free</a></li>
+                <li><a class="dropdown-item" href="#">Carnivore</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button type="button" class="btn btn-outline-custom">Search</button>
+      </form>
+    </div>
   </div>
 </nav>
+
 
 
 <!-- IMAGEN -->
@@ -101,7 +101,7 @@
   <div class="row justify-content-center align-items-center text-align w-100" data-aos="fade-up">
 
     <!-- Imagen -->
-    <div class="col-6 p-0">
+    <div class="col-7 p-0">
       <img src="media-2/top-view-delicious-thanksgiving-pumpkin-pie.jpg" 
            class="card-img-top img-fluid" 
            style="width: 100%; height: 400px; object-fit: cover;" 
@@ -109,11 +109,12 @@
     </div>
 
     <!-- Texto -->
-    <div class="col-4 text-center px-5">
+    <div class="col-4 text-center px-5 bordered-text">
       <h1 class="textfront px-1 mb-4">Grandma's Pumpkin Pie</h1>
       <p class="pfront px-3 mb-6">Try this tasty, easy and creamy recipe to welcome this season. Look no further if you want to impress your guests.</p>
 
-      <a href="pumpkin-pie.html" class="btn btn-light mx-auto mt-3" style="width: 40%;">Try it!</a>
+      <a href="pumpkin-pie.html" class="btn btn-custom mx-auto mt-3" style="width: 40%;">Try it!</a>
+
 
     </div>
 
@@ -126,7 +127,7 @@
 <div class="container-fluid m-0 p-0 my-4">
   <div class="row justify-content-center mt-4">
     <div class="col-12 p-0">
-      <div class="w-100 py-3 text-center" style="background-color: rgb(193, 220, 226);">
+      <div class="w-100 py-3 text-center">
         <h2 class="mb-0">Get Cooking!</h2>
       </div>
     </div>
@@ -366,7 +367,7 @@
 <div class="container-fluid m-0 p-0 my-4">
   <div class="row justify-content-center mt-4">
     <div class="col-12 p-0">
-      <div class="w-100 py-3 text-center" style="background-color: rgb(193, 220, 226);">
+      <div class="w-100 py-3 text-center">
         <h2 class="mb-0">Explore Recipes</h2>
       </div>
     </div>
@@ -389,7 +390,7 @@
 
 <!-- FIND THE PERFECT RECIPE -->
 
-<div class="container-fluid" style="background-color: rgb(193, 220, 226);">
+<div class="container-fluid">
   <div class="row text-center py-3">
     <div class="col-12 mt-3">
       <h2>Find the Perfect Recipe</h2>
@@ -529,7 +530,7 @@
 <div class="container-fluid m-0 p-0 my-4">
   <div class="row justify-content-center mt-4">
     <div class="col-12 p-0">
-      <div class="w-100 py-3 text-center" style="background-color: rgb(193, 220, 226);">
+      <div class="w-100 py-3 text-center">
         <h2 class="mb-0">Search Recipes by Categories!</h2>
       </div>
     </div>
