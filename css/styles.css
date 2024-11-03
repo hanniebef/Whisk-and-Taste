@@ -72,13 +72,6 @@ h2 {
   text-decoration: none;
 }
 
-.form-control {
-  background-color: rgb(249, 242, 230); 
-  border: 1px solid #333;
-  border-radius: 5px;
-  color: rgb(249, 242, 230);
-}
-
 .btn-light {
   background-color: #333;
   color:rgb(249, 242, 230) ;
@@ -422,6 +415,50 @@ body .container {
   color: #333;
   border: 1px solid #333;
 }
+
+
+/* FORM */
+
+.custom-signup-btn {
+  background-color: #333;
+  color: rgb(249, 242, 230);
+  border: 1px solid #333; 
+  width: 50%; 
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.custom-signup-btn:hover {
+  background-color: rgb(249, 242, 230);
+  color: #333;
+  border: 1px solid #333; 
+}
+
+.custom-border {
+  border-right-width: 3px; 
+  border-right-style: solid;
+  border-right-color: #333;
+}
+
+.form-control {
+  background-color: rgb(249, 242, 230); 
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: rgb(249, 242, 230);
+}
+
+.custom-end {
+  color: #333;
+  border-radius: 2px;
+}
+
+.custom-border-form {
+  border-right-width: 2px; 
+  border-right-style: solid;
+  border-right-color: #333;
+}
+
 
 
 
