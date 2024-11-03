@@ -510,10 +510,9 @@
 
 <!-- SEARCH RECIPES BY CATEGORIES  -->
 
-
 <div class="w-100 py-3 text-center">
   <h2 class="mb-4 mt-2">SEARCH RECIPES BY CATEGORIES</h2>
-<div class="border-bottom-line"></div> 
+  <div class="border-bottom-line"></div> 
 </div>
 
 <div class="container-fluid m-0 p-0 my-4">
@@ -523,43 +522,60 @@
   </div>
   
   <div class="container my-4">
-    <div class="row gx-0 gy-4"> 
+    <div class="row gx-0 gy-4" id="buttonContainer"> 
       <div class="col-md-4 d-flex justify-content-center">
-        <button class="btn btn-primary py-3" style="width: 70%;">15 Minute Meals</button> 
+        <button class="btn custom-btn py-3" style="width: 70%;">15 Minute Meals</button> 
       </div>
       <div class="col-md-4 d-flex justify-content-center">
-        <button class="btn btn-primary py-3" style="width: 70%;">Korean Cuisine</button>
+        <button class="btn custom-btn py-3" style="width: 70%;">African Cuisine</button>
       </div>
       <div class="col-md-4 d-flex justify-content-center">
-        <button class="btn btn-primary py-3" style="width: 70%;">One Pan Meals</button>
+        <button class="btn custom-btn py-3" style="width: 70%;">One Pan Meals</button>
       </div>
       <div class="col-md-4 d-flex justify-content-center">
-        <button class="btn btn-primary py-3" style="width: 70%;">30 Minute Meals</button>
+        <button class="btn custom-btn py-3" style="width: 70%;">30 Minute Meals</button>
       </div>
       <div class="col-md-4 d-flex justify-content-center">
-        <button class="btn btn-primary py-3" style="width: 70%;">Chinese Cuisine</button>
+        <button class="btn custom-btn py-3" style="width: 70%;">Mediterranean Cuisine</button>
       </div>
       <div class="col-md-4 d-flex justify-content-center">
-        <button class="btn btn-primary py-3" style="width: 70%;">Pasta</button>
+        <button class="btn custom-btn py-3" style="width: 70%;">Pasta</button>
       </div>
       <div class="col-md-4 d-flex justify-content-center">
-        <button class="btn btn-primary py-3" style="width: 70%;">45 Minute Meals</button>
+        <button class="btn custom-btn py-3" style="width: 70%;">45 Minute Meals</button>
       </div>
       <div class="col-md-4 d-flex justify-content-center">
-        <button class="btn btn-primary py-3" style="width: 70%;">Spanish Cuisine</button>
+        <button class="btn custom-btn py-3" style="width: 70%;">Latin Cuisine</button>
       </div>
       <div class="col-md-4 d-flex justify-content-center">
-        <button class="btn btn-primary py-3" style="width: 70%;">Stews</button>
+        <button class="btn custom-btn py-3" style="width: 70%;">Stews</button>
+      </div>
+    </div>
+    
+    <!-- Contenedor para la nueva fila de botones -->
+    <div class="row gx-0 gy-4 mt-2" id="newRow" style="display: none;">
+      <div class="col-md-4 d-flex justify-content-center">
+        <button class="btn custom-btn py-3" style="width: 70%;">1 Hour Meals</button> 
+      </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <button class="btn custom-btn py-3" style="width: 70%;">Asian Cuisine</button>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <button class="btn custom-btn py-3" style="width: 70%;">Salads</button>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Load More Button -->
-<div class="row justify-content-center mt-4">
+<!-- Load More Button -->
+<div class="row justify-content-center mt-5 mb-5">
   <div class="col-12 text-center">
-    <button type="button" class="btn btn-light border border-dark">Load More</button>
+    <button type="button" class="btn btn-light border border-dark" id="toggleButton">Load More</button>
   </div>
 </div>
+
+
+<div class="border-bottom-line"></div>
 
 
 <!-- FORMS -->

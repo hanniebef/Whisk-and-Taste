@@ -65,5 +65,23 @@ const filterCards = (e) => {
 
 filterButtons.forEach(button => button.addEventListener("click", filterCards));
 
-  
+
+// Load more
+
+$(document).ready(function () {
+  $('#toggleButton').on('click', function () {
+    const newRow = $('#newRow');
+    if (newRow.is(':visible')) {
+      // Ocultar la fila y cambiar el botón a "Load More"
+      newRow.slideUp();
+      $(this).text('Load More');
+    } else {
+      // Mostrar la fila y cambiar el botón a "Close"
+      newRow.slideDown();
+      $(this).text('Close');
+    }
+  });
+});
+
+
   
