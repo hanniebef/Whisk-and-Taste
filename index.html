@@ -14,6 +14,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
 
    <!-- ICONS -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -37,9 +38,14 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-custom">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Whisk and Taste</a>
+    <a class="navbar-brand" href="#">
+      <div class="pt-2 ps-2">
+        <img src="media-2/WhiskandTaste_logo.png" alt="Whisk and Taste Logo" style="height: 2em;">
+      </div>
+    </a>
+       
     <div class="navbar-divider"></div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
       aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,47 +99,47 @@
   </div>
 </nav>
 
-
-
+<div class="border-upper-line"></div>
 <!-- IMAGEN -->
 
-<div class="cont-pr container p-3 mt-3 min-vh-50 d-flex align-items-center">
-  <div class="row justify-content-center align-items-center text-align w-100" data-aos="fade-up">
-
+<div class="cont-pr container-fluid p-0 min-vh-75 d-flex align-items-center position-relative">
+  <div class="row justify-content-between align-items-center w-100 mx-0" data-aos="fade-up">
     <!-- Imagen -->
-    <div class="col-7 p-0">
+    <div class="col-7 col-lg-7 p-0">
       <img src="media-2/top-view-delicious-thanksgiving-pumpkin-pie.jpg" 
            class="card-img-top img-fluid" 
            style="width: 100%; height: 400px; object-fit: cover;" 
            alt="Pumpkin Pie">
     </div>
-
     <!-- Texto -->
-    <div class="col-4 text-center px-5 bordered-text">
-      <h1 class="textfront px-1 mb-4">Grandma's Pumpkin Pie</h1>
-      <p class="pfront px-3 mb-6">Try this tasty, easy and creamy recipe to welcome this season. Look no further if you want to impress your guests.</p>
-
+    <div class="col-5 col-lg-5 text-center bordered-text">
+      <h1 class="textfront mb-5">
+        <span class="d-block">Grandma's</span>
+        <span class="d-block">Pumpkin Pie</span>
+      </h1>
+      <div class="col-8 mx-auto">
+        <p class="pfront mb-4 text-justify">Try this tasty, easy and creamy recipe to welcome this season. Look no further if you want to impress your guests with this sweet and delicious dessert.</p>
+      </div>
       <a href="pumpkin-pie.html" class="btn btn-custom mx-auto mt-3" style="width: 40%;">Try it!</a>
-
-
     </div>
-
   </div>
 </div>
 
+<div class="border-bottom-line"></div> 
 
 <!-- GALERIA -->
+
+<div class="w-100 py-3 text-center">
+  <h2 class="mb-4 mt-3">GET COOKING!</h2>
+<div class="border-bottom-line"></div> 
+</div>
 
 <div class="container-fluid m-0 p-0 my-4">
   <div class="row justify-content-center mt-4">
     <div class="col-12 p-0">
-      <div class="w-100 py-3 text-center">
-        <h2 class="mb-0">Get Cooking!</h2>
-      </div>
     </div>
   </div>
 </div>
-
 
   <div class="row justify-content-center">
     
@@ -214,15 +220,10 @@
 <!-- Load More Button -->
 <div class="row justify-content-center mt-4">
   <div class="col-12 text-center">
-    <button type="button" class="btn btn-light border border-dark">Load More</button>
+    <button type="button" class="btn btn-light border border-dark mb-5">Load More</button>
   </div>
 </div>
-
-
-  
   </div>
-
-
 
 <!-- MODALES -->
 
@@ -237,13 +238,12 @@
         <img src="media-2/minestrone.jpg" class="img-fluid d-block mx-auto" style="width: 200px; height: 150px; object-fit: cover;" alt="Minestrone Soup">
         <p>This budget minestrone is the classic Italian soup made with cannellini beans and broken up spaghetti. Feel free to stir in extra vegetables, depending on what you have in the fridge. This is designed to be a low cost recipe.</p>
         <p>Each serving provides 300 kcal, 18.3g protein, 37.1g carbohydrate (of which 14g sugars), 5.2g fat (of which 1g saturates), 16.5g fibre and 1.85g salt.</p>
-        <div class="text-center mt-3">
-          <button type="button" class="btn btn-light">Go to recipe</button>
-        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn btn-light">Go to recipe</button>
       </div>
+
     </div>
   </div>
 </div>
@@ -259,13 +259,12 @@
         <img src="media-2/feta-salad.jpg" class="img-fluid d-block mx-auto" style="width: 200px; height: 150px; object-fit: cover;" alt="Feta and Ruccula Salad">
         <p>This refreshing salad combines peppery arugula with creamy feta cheese, cherry tomatoes, and a drizzle of olive oil. Toss in some toasted nuts or seeds for extra crunch, and feel free to add any seasonal vegetables you have on hand. This vibrant salad is quick to prepare and packed with flavor.</p>
         <p>Each serving provides 220 kcal, 8.5g protein, 12g carbohydrate (of which 3g sugars), 18g fat (of which 4g saturates), 3g fiber, and 0.5g salt.</p>
-        <div class="text-center mt-3">
-          <button type="button" class="btn btn-light">Go to recipe</button>
-        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn btn-light">Go to recipe</button>
       </div>
+
     </div>
   </div>
 </div>
@@ -282,13 +281,12 @@
         <p>This hearty grain bowl is a nutritious mix of quinoa, roasted vegetables, and a spicy sriracha dressing. Customize it with your favorite toppings like avocado, edamame, or pickled vegetables. It's an easy, filling meal that’s perfect for lunch or dinner.</p>
 
         <p>Each serving provides 400 kcal, 15g protein, 55g carbohydrate (of which 6g sugars), 12g fat (of which 2g saturates), 8g fiber, and 1g salt.</p>
-                <div class="text-center mt-3">
-          <button type="button" class="btn btn-light">Go to recipe</button>
-        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn btn-light">Go to recipe</button>
       </div>
+      
     </div>
   </div>
 </div>
@@ -304,13 +302,12 @@
      <img src="media-2/orange-cinammon-cake.jpg" class="img-fluid d-block mx-auto" style="width: 200px; height: 150px; object-fit: cover;" alt="Orange and Cinnamon Cake">
         <p>This moist cake combines the zesty flavor of oranges with a warm hint of cinnamon. It’s a delightful dessert that’s perfect for any occasion. Enjoy it plain or with a dusting of powdered sugar. Simple to make and sure to impress!</p>
         <p>Each serving provides 250 kcal, 3g protein, 35g carbohydrate (of which 18g sugars), 10g fat (of which 3g saturates), 1g fiber, and 0.3g salt.</p>
-        <div class="text-center mt-3">
-          <button type="button" class="btn btn-light">Go to recipe</button>
-        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn btn-light">Go to recipe</button>
       </div>
+
     </div>
   </div>
 </div>
@@ -327,13 +324,12 @@
         <p>This comforting pumpkin soup is made with pureed pumpkin, onions, garlic, and a blend of warm spices. It’s a perfect way to enjoy fall flavors and can be served with a dollop of cream or yogurt. Great for batch cooking and freezing for later! </p>
 
         <p> Each serving provides 180 kcal, 4g protein, 30g carbohydrate (of which 5g sugars), 5g fat (of which 1g saturates), 5g fiber, and 0.7g salt.</p>
-        <div class="text-center mt-3">
-          <button type="button" class="btn btn-light">Go to recipe</button>
-        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn btn-light">Go to recipe</button>
       </div>
+
     </div>
   </div>
 </div>
@@ -350,13 +346,12 @@
         <p>These classic French pastries are filled with a rich chocolate custard and topped with a glossy chocolate glaze. Perfect for dessert or a special treat, they’re made with choux pastry that puffs up beautifully in the oven.</p>
 
         <p> Each éclair provides 300 kcal, 5g protein, 35g carbohydrate (of which 15g sugars), 18g fat (of which 7g saturates), 2g fiber, and 0.4g salt.</p>
-        <div class="text-center mt-3">
-          <button type="button" class="btn btn-light">Go to recipe</button>
-        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn btn-light">Go to recipe</button>
       </div>
+      
     </div>
   </div>
 </div>
@@ -364,13 +359,15 @@
 
 <!-- MORE RECIPES  -->
 
-<div class="container-fluid m-0 p-0 my-4">
-  <div class="row justify-content-center mt-4">
-    <div class="col-12 p-0">
-      <div class="w-100 py-3 text-center">
-        <h2 class="mb-0">Explore Recipes</h2>
-      </div>
-    </div>
+<div class="border-upper-line"></div>
+<div class="w-100 py-3 text-center">
+  <h2 class="mb-4 mt-2">MORE RECIPES</h2>
+<div class="border-bottom-line"></div> 
+</div>
+
+<div class="container-fluid m-0 p-0">
+  <div class="row justify-content-center">
+    <div class="col-12 p-0"></div>
   </div>
 </div>
 
@@ -387,32 +384,20 @@
   </div>
   
 
-
 <!-- FIND THE PERFECT RECIPE -->
 
-<div class="container-fluid">
+<div class="border-upper-line"></div>
+<div class="w-100 py-3 text-center">
+  <h2 class="mb-4 mt-2">FIND THE PERFECT RECIPE</h2>
+<div class="border-bottom-line"></div> 
+</div>
+
+<div class="container-fluid mb-5">
   <div class="row text-center py-3">
-    <div class="col-12 mt-3">
-      <h2>Find the Perfect Recipe</h2>
-    </div>
-    <div class="col d-flex justify-content-around flex-wrap my-5 px-3">
-      <i class="fa-solid fa-fish icon-button" style="color: #000000;"></i>
-      <i class="fa-solid fa-drumstick-bite icon-button" style="color: #000000;"></i>
-      <i class="fa-solid fa-cheese icon-button" style="color: #000000;"></i>
-      <i class="fa-solid fa-bowl-food icon-button" style="color: #000000;"></i>
-      <i class="fa-solid fa-seedling icon-button" style="color: #000000;"></i>
-      <i class="fa-solid fa-carrot icon-button" style="color: #000000;"></i>
-      <i class="fa-solid fa-martini-glass-citrus" style="color: #000000;font-size: 40px;cursor: pointer;transition: transform 0.3s;text-align: center;"></i>
-      <i class="fa-solid fa-ice-cream icon-button" style="color: #000000;"></i>
-      <i class="fa-solid fa-magnifying-glass icon-button" style="color: #000000;"></i>
-    </div>
   </div>
 </div>
 
-
-<!-- MEMBERS -->
-
-<div class="container">
+<div class="container mb-5">
   <!-- Images Filter Buttons Section -->
   <div class="row mt-5" id="filter-buttons">
       <div class="col-12">
@@ -493,21 +478,16 @@
   </div>
 </div>
 
-
-
-
-
-
-
 <br>
 
 <!-- Charcuterie Board -->
 
-<div class="cont-pr container-fluid p-0 mt-3 d-flex align-items-center" style="min-height: 60vh;">
+<div class="border-upper-line"></div>
+<div class="cont-pr container-fluid p-0 d-flex align-items-center">
   <div class="row justify-content-center align-items-center w-100">
 
     <!-- Texto -->
-    <div class="col-4 col-md-4 text-center p-5" style="flex: 0 0 40%;">
+    <div class="col-4 col-md-4 text-center px-5" style="flex: 0 0 40%;">
       <h6>Recommendation of the Week</h6>
       <br>
       <h1 class="textfront px-1 mb-4">Build Your Dream Charcuterie Board!</h1>
@@ -525,14 +505,20 @@
   </div>
 </div>
 
+<div class="border-bottom-line"></div>
+
+
 <!-- SEARCH RECIPES BY CATEGORIES  -->
+
+
+<div class="w-100 py-3 text-center">
+  <h2 class="mb-4 mt-2">SEARCH RECIPES BY CATEGORIES</h2>
+<div class="border-bottom-line"></div> 
+</div>
 
 <div class="container-fluid m-0 p-0 my-4">
   <div class="row justify-content-center mt-4">
     <div class="col-12 p-0">
-      <div class="w-100 py-3 text-center">
-        <h2 class="mb-0">Search Recipes by Categories!</h2>
-      </div>
     </div>
   </div>
   

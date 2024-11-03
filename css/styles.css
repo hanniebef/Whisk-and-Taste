@@ -1,6 +1,6 @@
-* {
+/* * {
   background-color: rgb(249, 242, 230);
-}
+} */
 
 body {
   background-color: rgb(249, 242, 230);
@@ -8,16 +8,18 @@ body {
   padding: 0;
 }
 
+h2 {
+  font-family: "Playfair"
+}
+
 
 /* NAVBAR */
 
 .navbar-brand {
-  font-family: "Playball", cursive;
   font-size: 2em;
   font-style: normal;
 }
 
-/* Línea divisoria vertical */
 .navbar-divider {
   border-left: 1px solid #333; 
   height: 40px;
@@ -43,7 +45,7 @@ body {
 }
 
 .navbar-custom::before {
-  bottom: 3px; 
+  bottom: 5px; 
 }
 
 .navbar-custom::after {
@@ -74,12 +76,22 @@ body {
   background-color: rgb(249, 242, 230); 
   border: 1px solid #333;
   border-radius: 5px;
+  color: rgb(249, 242, 230);
+}
+
+.btn-light {
+  background-color: #333;
+  color:rgb(249, 242, 230) ;
+}
+
+.btn:hover {
+  background-color: rgb(249, 242, 230);
   color: #333;
 }
 
 .btn-outline-custom {
-  background-color: rgb(249, 242, 230);
-  color: #333;
+  background-color: #333;
+  color: rgb(249, 242, 230);
   border: 1px solid #333;
   border-radius: 5px;
 }
@@ -105,23 +117,39 @@ body {
   border-color: #333; 
 }
 
+.border-upper-line {
+  height: 2px;
+  position: relative;
+  margin: 7px 0;
+}
+
+.border-upper-line::before,
+.border-upper-line::after {
+  content: ""; 
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  height: 1px; 
+  background-color: #333;
+}
+
+.border-upper-line::before {
+  top: 0px; 
+}
+
+.border-upper-line::after {
+  top: 8px;
+}
+
 
 /* IMAGEN */
 
-.col-7 {
-  flex: 0 0 auto;
-  width: 65%;
-}
-
-.col-4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 400px;
+.col-7, .col-5 {
+  padding: 0;
 }
 
 .textfront {
-    font-family: "Playfair";
+    font-family: "Playfair", serif;
     text-align: center;
 }
 
@@ -131,13 +159,40 @@ body {
 }
 
 .bordered-text {
-  border-top: 1px solid #333;
-  border-right: 1px solid #333; 
-  border-bottom: 1px solid #333;
-  border-left: none;
+  position: relative;
+  z-index: 1;
   padding: 20px;
   border-radius: 0 5px 5px 0;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.border-bottom-line {
+  height: 2px; 
+  position: relative; 
+  /* margin: 10px 0; */
+}
+
+.border-bottom-line::before,
+.border-bottom-line::after {
+  content: ""; 
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  height: 1px; 
+  background-color: #333;
+}
+
+.border-bottom-line::before {
+  top: 7px; 
+}
+
+.border-bottom-line::after {
+  top: 0px; 
+}
+
 
 
 
@@ -232,7 +287,15 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-  
+
+.modal-body , .modal-header , .modal-footer {
+  background-color: rgb(249, 242, 230);
+}
+
+
+.modal-title {
+  color: #333;
+}
 
 
 /* CARRUSEL */
@@ -262,6 +325,8 @@ body {
 }
 
 
+
+
 /* FIND THE PERFECT RECIPE */
 
 .icon-button {
@@ -280,18 +345,19 @@ body {
 .row {
   margin-right: 0;
   margin-left: 0;
-  padding: 0; /* Asegura que no haya padding en x */
+  padding: 0; 
 }
+
 
 /* PUMPKIN PIE */
 
-.textfront {
+.textfrontdos {
   font-size: 36px; 
   font-family: "Playfair Display", serif;
   line-height: 1.2; 
 }
 
-.pfront {
+.pfrontdos {
   font-size: 16px; 
   font-family: "Afacad Flux", sans-serif;
   text-align: justify; 
@@ -299,7 +365,7 @@ body {
   margin-left: -15px; 
 }
 
-.vertical-line {
+.vertical-linedos {
   width: 2px; 
   background-color: #cccccc; 
   height: 100%; 
@@ -307,9 +373,7 @@ body {
   margin-right: 10px; 
 }
 
-/* MEMBERS */
-
-
+/* FIND */
 
 body .container {
   max-width: 1100px;
@@ -317,27 +381,36 @@ body .container {
 
 #filter-buttons button {
   border-radius: 3px;
-  background: #fff;
-  border-color: transparent;
+  background: rgb(249, 242, 230);
+  border-color: #333;
+  /* border-color: transparent; */
 }
 
 #filter-buttons button:hover {
-  background: #ddd;
+  background: #33333378;
 }
 
 #filter-buttons button.active {
-  color: #fff;
-  background: #6c757d;
+  color: rgb(249, 242, 230);
+  background: #333;
 }
 
 #filterable-cards .card {
+  background-color: rgb(249, 242, 230);
+  color: #333;
   width: 15rem;
   border: 2px solid transparent;
+  border-color: #333;
+}
+
+#filterable-cards .card .card-title {
+  color: #333;
 }
 
 #filterable-cards .card.hide {
   display: none;
 }
+
 
 @media (max-width: 600px) {
   #filterable-cards {
