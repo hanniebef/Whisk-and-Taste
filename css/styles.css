@@ -478,7 +478,7 @@ body .container {
 .footer {
   background-color: #333; 
   color: rgb(249, 242, 230); 
-  padding: 20px;
+  padding: 40px 20px 20px;
 }
 
 .footer-content {
@@ -486,20 +486,29 @@ body .container {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+.footer-logo {
+  text-align: center;
 }
 
 .footer-logo img {
-  height: 80px;
+  height: 120px;
 }
-  
+
+.footer-slogan {
+  font-size: 0.9em;
+  color: rgb(249, 242, 230); 
+  margin-top: 20px; 
+}
 
 .footer-links {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   list-style-type: none; 
   padding: 0;
   margin: 0;
+  align-items: flex-start;
 }
 
 .footer-links .category {
@@ -539,19 +548,28 @@ body .container {
 }
 
 .footer-links .subcategories li span::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px; 
-    background-color: rgb(249, 242, 230); 
-    position: absolute; 
-    bottom: -3px;
-    left: 0; 
-    opacity: 0; 
-    transition: opacity 0.3s; 
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px; 
+  background-color: rgb(249, 242, 230); 
+  position: absolute; 
+  bottom: -3px;
+  left: 0; 
+  opacity: 0; 
+  transition: opacity 0.3s; 
 }
 
 .footer-links .subcategories li span:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
-  
+
+.footer-line {
+  border: none;
+  height: 2px;
+  background-color: rgb(249, 242, 230);
+  width: 100%; 
+  margin: 10px 0; 
+  opacity: 100%;
+}
+
