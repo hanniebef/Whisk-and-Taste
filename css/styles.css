@@ -459,117 +459,27 @@ body .container {
   border-right-color: #333;
 }
 
+/* Footer */
 
-
-
-@media (max-width: 600px) {
-  #filterable-cards {
-      justify-content: center;
-  }
-
-  #filterable-cards .card {
-      width: calc(100% / 2 - 10px);
-  }
+.hover-underline li {
+  border-bottom: none !important;
 }
 
-
-
-
-.footer {
-  background-color: #333; 
-  color: rgb(249, 242, 230); 
-  padding: 40px 20px 20px;
+.hover-underline li:hover > a {
+  border-bottom: 1px solid rgb(249, 242, 230);
+  padding-bottom: 2px; 
 }
 
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-logo {
-  text-align: center;
-}
-
-.footer-logo img {
-  height: 120px;
-}
-
-.footer-slogan {
-  font-size: 0.9em;
-  color: rgb(249, 242, 230); 
-  margin-top: 20px; 
-}
-
-.footer-links {
-  display: flex;
-  gap: 50px;
-  list-style-type: none; 
-  padding: 0;
-  margin: 0;
-  align-items: flex-start;
-}
-
-.footer-links .category {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.footer-links .category > span {
-  font-weight: bold;
-  color: rgb(249, 242, 230); 
-  margin-bottom: 5px;
-  font-size: 1.2em;
-}
-
-.footer-links .subcategories {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links .subcategories li a {
-  color: rgb(249, 242, 230); 
+.hover-underline li > a {
+  border-bottom: none;
   text-decoration: none; 
-  cursor: pointer; 
 }
 
-.footer-links .subcategories li span {
-  color: rgb(249, 242, 230); 
-  text-decoration: none;
-  cursor: default;
-  font-size: 0.9em;
-  position: relative;
+.textfooter , .text-uppercase {
+  color: rgb(249, 242, 230);
 }
 
-.footer-links .subcategories li span::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px; 
-  background-color: rgb(249, 242, 230); 
-  position: absolute; 
-  bottom: -3px;
-  left: 0; 
-  opacity: 0; 
-  transition: opacity 0.3s; 
-}
-
-.footer-links .subcategories li span:hover::after {
-  opacity: 1;
-}
-
-.footer-line {
-  border: none;
-  height: 2px;
-  background-color: rgb(249, 242, 230);
-  width: 100%; 
-  margin: 10px 0; 
-  opacity: 100%;
+.text-center {
+  font-size: 13px;
 }
 
