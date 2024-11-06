@@ -297,6 +297,13 @@ body {
   background-color: rgb(249, 242, 230);
 }
 
+.modal-header {
+  border-bottom: var(--bs-modal-header-border-width) solid #33333340;
+}
+
+.modal-footer {
+  border-top: var(--bs-modal-header-border-width) solid #33333340;
+}
 
 .modal-title {
   color: #333;
@@ -356,18 +363,12 @@ body {
 
 /* PUMPKIN PIE */
 
-.textfrontdos {
-  font-size: 36px; 
-  font-family: "Playfair Display", serif;
-  line-height: 1.2; 
-}
-
 .pfrontdos {
   font-size: 16px; 
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   text-align: justify; 
-  padding-right: 120px; 
+  /* padding-right: 120px;  */
   margin-left: -15px; 
 }
 
@@ -516,3 +517,36 @@ body .container {
 .reveal img {
   transform-origin: left;
 }
+
+@media (max-width: 768px) {
+  .cont-pr .row {
+    flex-direction: column; /* Coloca la imagen encima del texto */
+    align-items: center; /* Centra los elementos */
+  }
+
+  .cont-pr .col-7,
+  .cont-pr .col-5 {
+    flex: 0 0 100%; /* Cada columna ocupa el ancho completo */
+    max-width: 100%;
+  }
+
+  .cont-pr .col-7 img {
+    height: auto; /* Ajusta la altura automáticamente para evitar distorsión */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    margin-bottom: 1rem; /* Espacio debajo de la imagen */
+  }
+
+  .cont-pr .col-5 {
+    text-align: center; /* Centra el texto */
+    padding: 0 1rem; /* Agrega espacio lateral */
+  }
+}
+
+
+
+
+
+
+  
+  
+
