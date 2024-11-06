@@ -339,6 +339,8 @@ body {
 
 
 
+
+
 /* FIND THE PERFECT RECIPE */
 
 .icon-button {
@@ -520,27 +522,73 @@ body .container {
 
 @media (max-width: 768px) {
   .cont-pr .row {
-    flex-direction: column; /* Coloca la imagen encima del texto */
-    align-items: center; /* Centra los elementos */
+    flex-direction: column; 
+    align-items: center;
   }
 
   .cont-pr .col-7,
   .cont-pr .col-5 {
-    flex: 0 0 100%; /* Cada columna ocupa el ancho completo */
+    flex: 0 0 100%; 
     max-width: 100%;
   }
 
   .cont-pr .col-7 img {
-    height: auto; /* Ajusta la altura automáticamente para evitar distorsión */
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
-    margin-bottom: 1rem; /* Espacio debajo de la imagen */
+    height: auto;
+    width: 100%; 
+    margin-bottom: 1rem;
   }
 
   .cont-pr .col-5 {
-    text-align: center; /* Centra el texto */
-    padding: 0 1rem; /* Agrega espacio lateral */
+    text-align: center; 
+    padding: 0 1rem; 
+  }
+
+  #links-row .col-lg-2 {
+    flex: 0 0 50%; 
+    max-width: 50%;
   }
 }
+
+@media (min-width: 412px) {
+  .custom-border-form {
+    border-right-width: none;
+    border-right-style: none;
+    border-right-color: none;
+}
+
+
+.center {
+  overflow: hidden; 
+}
+
+.slick-carousel {
+  display: flex; 
+  justify-content: center; 
+}
+
+.slick-slide {
+  margin: 0 5px; 
+}
+
+
+.slick-prev {
+  left: auto;
+  z-index: 2;
+}
+
+.slick-next {
+  right: 25px;
+  z-index: 2;
+}
+
+.slick-prev, .slick-next {
+  display: block !important;
+}
+
+}
+
+
+
 
 
 

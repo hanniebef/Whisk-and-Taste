@@ -104,3 +104,26 @@ document.querySelectorAll(".reveal").forEach((container) => {
     tl.from(container, { xPercent: -100, duration: 0.5, ease: "power2.out" }); 
     tl.from(image, { xPercent: 100, scale: 1.3, duration: 1, ease: "power2.out" }); 
 });
+
+// BOTONES
+$('.center').slick({
+  slidesToShow: 3, 
+  slidesToScroll: 1,
+  arrows: true, 
+  responsive: [
+    {
+      breakpoint: 768, 
+      settings: {
+        slidesToShow: 2, 
+        arrows: true, 
+      }
+    },
+    {
+      breakpoint: 576, 
+      settings: {
+        slidesToShow: 1,
+        arrows: true, s
+      }
+    }
+  ]
+});
