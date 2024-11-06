@@ -85,3 +85,22 @@ $(document).ready(function () {
 
 
   
+// SCROLL IMG 2
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.querySelectorAll(".reveal").forEach((container) => {
+    let image = container.querySelector("img");
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: container,
+            start: "top 99%", 
+            end: "top 5%", 
+            toggleActions: "play none none none", 
+        }
+    });
+
+    tl.to(container, { autoAlpha: 1, duration: 0 });
+    tl.from(container, { xPercent: -100, duration: 0.5, ease: "power2.out" }); 
+    tl.from(image, { xPercent: 100, scale: 1.3, duration: 1, ease: "power2.out" }); 
+});
