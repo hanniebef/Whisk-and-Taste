@@ -21,10 +21,8 @@
    <!-- AOS CSS (Animations) -->
    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
    
-   <!-- SLICK CSS (Carousel) -->
-   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-   
+   <!-- FLICKITY -->
+   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
    
       <!-- CUSTOM CSS -->
       <link rel="stylesheet" href="css/styles.css">
@@ -361,7 +359,7 @@
 
 <section id="more-recipes">
 <div class="border-upper-line"></div>
-<div class="w-100 py-3 text-center">
+<div class="w-100 pt-3 text-center">
   <h2 class="f500 mb-4 mt-2">MORE RECIPES</h2>
 <div class="border-bottom-line"></div> 
 </div>
@@ -373,18 +371,28 @@
   </div>
 </div>
 
-  <!-- CARRUSEL -->
-  <div class="row justify-content-center my-4">
-    <div class="center col-12 p-0 center">
-      <div><img src="media-2/pasta-bow.jpg" alt="Pasta Bow" style="width: 100%; height: 250px; object-fit: cover"></div>
-      <div><img src="media-2/labneh.jpg" alt="Labneh" style="width: 100%; height: 250px; object-fit: cover"></div>
-      <div><img src="media-2/greek-bowl.jpg" alt="Greek Bowl" style="width: 100%; height: 250px; object-fit: cover"></div>
-      <div><img src="media-2/veggie-bowl.jpg" alt="Veggie Bowl" style="width: 100%; height: 250px; object-fit: cover"></div>
-      <div><img src="media-2/pasta-bolognese.jpg" alt="Pasta Bolognese" style="width: 100%; height: 250px; object-fit: cover"></div>
-      <div><img src="media-2/goulash.jpg" alt="Goulash" style="width: 100%; height: 250px; object-fit: cover"></div>
-    </div>
+
+<!-- CARRUSEL -->
+<div class="main-carousel pt-1 mb-5" style="margin-top: 2px;">
+  <div class="carousel-cell">
+    <img src="media-2/pasta-bow.jpg" alt="Pasta Bow" style="width: 100%; height: 250px; object-fit: cover">
   </div>
-  
+  <div class="carousel-cell">
+    <img src="media-2/labneh.jpg" alt="Labneh" style="width: 100%; height: 250px; object-fit: cover">
+  </div>
+  <div class="carousel-cell">
+    <img src="media-2/greek-bowl.jpg" alt="Greek Bowl" style="width: 100%; height: 250px; object-fit: cover">
+  </div>
+  <div class="carousel-cell">
+    <img src="media-2/veggie-bowl.jpg" alt="Veggie Bowl" style="width: 100%; height: 250px; object-fit: cover">
+  </div>
+  <div class="carousel-cell">
+    <img src="media-2/pasta-bolognese.jpg" alt="Pasta Bolognese" style="width: 100%; height: 250px; object-fit: cover">
+  </div>
+  <div class="carousel-cell">
+    <img src="media-2/goulash.jpg" alt="Goulash" style="width: 100%; height: 250px; object-fit: cover">
+  </div>
+</div>
 
 <!-- FIND THE PERFECT RECIPE -->
 
@@ -656,7 +664,7 @@
 </div>
 </section>
 
-
+<div class="border-bottom-line"></div>
 
 <!-- Footer -->
 
@@ -786,24 +794,24 @@
 
 
 
-    <!-- BOOSTRAP JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- BOOSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- SLICK JS (Carousel) -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- FLICKITY -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-    <!-- AOS JS (Animations) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<!-- AOS JS (Animations) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-    <!-- TRIGGER -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+<!-- TRIGGER -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 
-    <!-- CUSTOM JS -->
-    <script src="js/script.js"></script>
+<!-- CUSTOM JS -->
+<script src="js/script.js"></script>
 
 
 </body>

@@ -1,36 +1,20 @@
+
 // AOS
   AOS.init();
 
+
 // CARRUSEL
-$(document).ready(function(){
-  $('.center').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
-    arrows: true, 
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
+
+(function($){
+  $(document).ready(function(){
+    $('.main-carousel').flickity({
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true
+    });
   });
-});
-  
+})(jQuery);
+
 
 // NAVBAR
 
@@ -109,29 +93,6 @@ document.querySelectorAll(".reveal").forEach((container) => {
     tl.from(image, { xPercent: 100, scale: 1.3, duration: 1, ease: "power2.out" }); 
 });
 
-// BOTONES
-$('.center').slick({
-  slidesToShow: 3, 
-  slidesToScroll: 1,
-  arrows: true, 
-  responsive: [
-    {
-      breakpoint: 768, 
-      settings: {
-        slidesToShow: 2, 
-        arrows: true, 
-      }
-    },
-    {
-      breakpoint: 576, 
-      settings: {
-        slidesToShow: 1,
-        arrows: true, s
-      }
-    }
-  ]
-});
-
 // NAVBAR 2
 
 $(document).ready(function() {
@@ -139,3 +100,12 @@ $(document).ready(function() {
       $(this).removeClass("hover");
   });
 });
+
+// CHARCUTERIE
+
+
+
+
+
+
+
