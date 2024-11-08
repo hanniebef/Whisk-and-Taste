@@ -29,10 +29,15 @@ body {
   font-style: normal;
 }
 
-.f500 {
+.f500 , h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
+}
+
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
 }
 
 
@@ -311,7 +316,6 @@ body {
 
 
 /* CARRUSEL */
-
 .center {
   overflow: hidden; 
 }
@@ -335,10 +339,6 @@ body {
   right: 25px;
   z-index: 2;
 }
-
-
-
-
 
 
 /* FIND THE PERFECT RECIPE */
@@ -457,6 +457,12 @@ body .container {
   border-right-color: #333;
 }
 
+.left-border {
+  border-left-width: 1px; 
+  border-left-style: solid;
+  border-left-color: #333;
+}
+
 .form-control {
   background-color: rgb(249, 242, 230); 
   border: 1px solid #333;
@@ -517,6 +523,93 @@ body .container {
 .reveal img {
   transform-origin: left;
 }
+
+/* GALERÍA 2*/
+
+.gallery-2 {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  background: #000;
+  height: 400px;
+  transition: transform 0.4s ease;
+}
+
+.gallery-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-2 figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2; 
+}
+
+.gallery-2 h3 {
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.gallery-2 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.gallery-2:hover img {
+  opacity: 0.2; 
+}
+
+.gallery-2:hover figcaption {
+  opacity: 1; 
+}
+
+.btn-gallery {
+  background-color: none;
+  color: white;
+  border: 1px solid white;
+  margin-top: 5px;
+  transition: background-color 0.3s ease;
+  z-index: 3;
+  position: relative;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-gallery:hover {
+  background-color: none;
+  color: white;
+  border: 1px solid white;
+}
+
+.gallery-2:hover .btn-gallery {
+  background-color: none;
+  color: white;
+  border: 1px solid white;
+}
+
+.gallery-2 .btn-gallery:hover {
+  background-color: white; 
+  color: #333;
+}
+
+
+
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
   .cont-pr .row {

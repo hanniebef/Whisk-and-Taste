@@ -1,9 +1,7 @@
 // AOS
   AOS.init();
 
-
 // CARRUSEL
-
 $(document).ready(function(){
   $('.center').slick({
     centerMode: true,
@@ -32,7 +30,7 @@ $(document).ready(function(){
     ]
   });
 });
-
+  
 
 // NAVBAR
 
@@ -132,4 +130,12 @@ $('.center').slick({
       }
     }
   ]
+});
+
+// NAVBAR 2
+
+$(document).ready(function() {
+  $(".gallery-2").on("mouseleave", function() {
+      $(this).removeClass("hover");
+  });
 });
