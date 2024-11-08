@@ -1,9 +1,10 @@
-/* * {
-  background-color: rgb(249, 242, 230);
-} */
+:root {
+  --black: #333;
+  --white: rgb(249, 242, 230);
+}
 
 body {
-  background-color: rgb(249, 242, 230);
+  background-color: var(--white);
   margin: 0;
   padding: 0;
 }
@@ -57,7 +58,7 @@ h6 {
 
 .navbar-custom {
   position: relative;
-  border-top: 1px solid #ccc; 
+  border-top: 1px solid var(--white); 
   background-color: inherit;
 }
 
@@ -68,7 +69,7 @@ h6 {
   left: 0;
   right: 0;
   height: 1px; 
-  background-color: #333; 
+  background-color: var(--black); 
 }
 
 .navbar-custom::before {
@@ -101,30 +102,30 @@ h6 {
 
 .btn-light {
   background-color: #333;
-  color:rgb(249, 242, 230) ;
+  color:var(--white);;
 }
 
 .btn:hover {
-  background-color: rgb(249, 242, 230);
-  color: #333;
+  background-color: var(--white);
+  color: var(--black); 
 }
 
 .btn-outline-custom {
-  background-color: #333;
-  color: rgb(249, 242, 230);
-  border: 1px solid #333;
+  background-color: var(--black); 
+  color: var(--white);
+  border: 1px solid var(--black); 
   border-radius: 5px;
 }
 
 .btn-outline-custom:hover {
-  background-color: #333;
-  color: rgb(249, 242, 230);
+  background-color: var(--black); 
+  color: var(--white);
 }
 
 
 .btn-custom {
-  background-color: #333; 
-  color: rgb(249, 242, 230);
+  background-color: var(--black); 
+  color: var(--white);
   border: 2px solid transparent;
   border-radius: 5px;
   padding: 10px 20px;
@@ -132,9 +133,9 @@ h6 {
 }
 
 .btn-custom:hover {
-  background-color: rgb(249, 242, 230); 
-  color: #333; 
-  border-color: #333; 
+  background-color: var(--white);
+  color: var(--black); 
+  border-color: var(--black); 
 }
 
 .border-upper-line {
@@ -150,7 +151,7 @@ h6 {
   left: 0; 
   right: 0; 
   height: 1px; 
-  background-color: #333;
+  background-color: var(--black); 
 }
 
 .border-upper-line::before {
@@ -192,7 +193,7 @@ h6 {
   left: 0; 
   right: 0; 
   height: 1px; 
-  background-color: #333;
+  background-color: var(--black); 
 }
 
 .border-bottom-line::before {
@@ -225,7 +226,6 @@ h6 {
     text-align: center;
     position: relative;
     font-size: 17px;
-    /* background: rgba(0,0,0,0.6); */
     -webkit-transform: translatey(-100px);
     -ms-transform: translatey(-100px);
     transform: translatey(-100px);
@@ -299,7 +299,7 @@ h6 {
   }
 
 .modal-body , .modal-header , .modal-footer {
-  background-color: rgb(249, 242, 230);
+  background-color: var(--white);
 }
 
 .modal-header {
@@ -390,8 +390,8 @@ body .container {
 
 #filter-buttons button {
   border-radius: 3px;
-  background: rgb(249, 242, 230);
-  border-color: #333;
+  background: var(--white); 
+  border-color: var(--black); 
   /* border-color: transparent; */
 }
 
@@ -400,20 +400,20 @@ body .container {
 }
 
 #filter-buttons button.active {
-  color: rgb(249, 242, 230);
-  background: #333;
+  color: var(--white);
+  background: var(--black); 
 }
 
 #filterable-cards .card {
-  background-color: rgb(249, 242, 230);
-  color: #333;
+  background-color: var(--white);
+  color: var(--black); 
   width: 15rem;
   border: 2px solid transparent;
-  border-color: #333;
+  border-color: var(--black); 
 }
 
 #filterable-cards .card .card-title {
-  color: #333;
+  color: var(--black); 
 }
 
 #filterable-cards .card.hide {
@@ -421,24 +421,24 @@ body .container {
 }
 
 .custom-btn {
-  background-color: #333;
-  color: rgb(249, 242, 230);
-  border: 1px solid #333;
+  background-color: var(--black); 
+  color: var(--white);
+  border: 1px solid var(--black); 
 }
 
 .custom-btn:hover {
-  background-color: rgb(249, 242, 230);
-  color: #333;
-  border: 1px solid #333;
+  background-color: var(--white);
+  color: var(--black); 
+  border: 1px solid var(--black); 
 }
 
 
 /* FORM */
 
 .custom-signup-btn {
-  background-color: #333;
-  color: rgb(249, 242, 230);
-  border: 1px solid #333; 
+  background-color: var(--black); 
+  color: var(--white);
+  border: 1px solid var(--black); 
   width: 50%; 
   text-align: center;
   margin: 0 auto;
@@ -446,43 +446,43 @@ body .container {
 }
 
 .custom-signup-btn:hover {
-  background-color: rgb(249, 242, 230);
-  color: #333;
-  border: 1px solid #333; 
+  background-color: var(--white);
+  color: var(--black); 
+  border: 1px solid var(--black);  
 }
 
 .custom-border {
   border-right-width: 3px; 
   border-right-style: solid;
-  border-right-color: #333;
+  border-right-color: var(--black); 
 }
 
 .left-border {
   border-left-width: 1px; 
   border-left-style: solid;
-  border-left-color: #333;
+  border-left-color: var(--black); 
 }
 
 .form-control {
-  background-color: rgb(249, 242, 230); 
-  border: 1px solid #333;
+  background-color: var(--white);
+  border: 1px solid var(--black); 
   border-radius: 5px;
-  color: rgb(249, 242, 230);
+  color: var(--white);
 }
 
 .custom-end {
-  color: #333;
+  color: var(--black); 
   border-radius: 2px;
 }
 
 .custom-border-form {
   border-right-width: 1px; 
   border-right-style: solid;
-  border-right-color: #333;
+  border-right-color: var(--black); 
 }
 
 .custom-border-recipe {
-  border-right-width: 1px !important;   border-right-style: solid !important;  border-right-color: #333 !important;
+  border-right-width: 1px !important;   border-right-style: solid !important;  border-right-color: var(--black) !important;
 }
 
 /* Footer */
@@ -492,7 +492,7 @@ body .container {
 }
 
 .hover-underline li:hover > a {
-  border-bottom: 1px solid rgb(249, 242, 230);
+  border-bottom: 1px solid var(--white);
   padding-bottom: 2px; 
 }
 
@@ -502,7 +502,7 @@ body .container {
 }
 
 .textfooter , .text-uppercase {
-  color: rgb(249, 242, 230);
+  color: var(--white);
 }
 
 .text-center {
@@ -644,7 +644,7 @@ body .container {
 .custom-border-form {
   border-right-width: 1px; 
   border-right-style: none;
-  border-right-color: #333;
+  border-right-color: var(--black); 
   }
 
 .center {
