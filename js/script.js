@@ -66,20 +66,21 @@ $(document).ready(function() {
 window.addEventListener("scroll", function () {
   const parallaxImage = document.querySelector(".parallax-image");
   const parallaxContainer = document.querySelector(".parallax-container");
-  const containerHeight = parallaxContainer.offsetHeight;
-  let scrollOffset = window.pageYOffset;
 
-  let parallaxSpeed = 0.3; 
+  if (parallaxContainer && parallaxImage) { // Verifica que ambos elementos existan
+    const containerHeight = parallaxContainer.offsetHeight;
+    let scrollOffset = window.pageYOffset;
+    let parallaxSpeed = 0.3; 
+    let parallaxAmount = (scrollOffset * parallaxSpeed); 
 
-  let parallaxAmount = (scrollOffset * parallaxSpeed); 
+    if (parallaxAmount > containerHeight) {
+        parallaxAmount = containerHeight;
+    } else if (parallaxAmount < -containerHeight) {
+        parallaxAmount = -containerHeight; 
+    }
 
-  if (parallaxAmount > containerHeight) {
-      parallaxAmount = containerHeight;
-  } else if (parallaxAmount < -containerHeight) {
-      parallaxAmount = -containerHeight; 
+    parallaxImage.style.transform = `translateY(${parallaxAmount}px)`;
   }
-
-  parallaxImage.style.transform = `translateY(${parallaxAmount}px)`;
 });
 
 
