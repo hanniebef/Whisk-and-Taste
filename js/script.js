@@ -2,9 +2,6 @@
 // AOS
   AOS.init();
 
-
-
-
 // NAVBAR
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -26,12 +23,10 @@ document.addEventListener('DOMContentLoaded', function () {
 const filterButtons = document.querySelectorAll("#filter-buttons button");
 const filterableCards = document.querySelectorAll("#filterable-cards .card");
 
-// Function to filter cards based on filter buttons
 const filterCards = (e) => {
     document.querySelector("#filter-buttons .active").classList.remove("active");
     e.target.classList.add("active");
     filterableCards.forEach(card => {
-        // show the card if it matches the clicked filter or show all cards if "all" filter is clicked
         if (card.dataset.name === e.target.dataset.filter || e.target.dataset.filter === "all") {
             card.classList.remove("hide");
         } else {
@@ -43,46 +38,22 @@ const filterCards = (e) => {
 filterButtons.forEach(button => button.addEventListener("click", filterCards));
 
 
-// Load more
+// LOAD MORE
 
 $(document).ready(function () {
   $('#toggleButton').on('click', function () {
     const newRow = $('#newRow');
     if (newRow.is(':visible')) {
-      // Ocultar la fila y cambiar el botón a "Load More"
       newRow.slideUp();
       $(this).text('Load More');
     } else {
-      // Mostrar la fila y cambiar el botón a "Close"
       newRow.slideDown();
       $(this).text('Close');
     }
   });
 });
 
-
-  
-// SCROLL IMG 2
-
-gsap.registerPlugin(ScrollTrigger);
-
-document.querySelectorAll(".reveal").forEach((container) => {
-    let image = container.querySelector("img");
-    let tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: container,
-            start: "top 99%", 
-            end: "top 5%", 
-            toggleActions: "play none none none", 
-        }
-    });
-
-    tl.to(container, { autoAlpha: 1, duration: 0 });
-    tl.from(container, { xPercent: -100, duration: 0.5, ease: "power2.out" }); 
-    tl.from(image, { xPercent: 100, scale: 1.3, duration: 1, ease: "power2.out" }); 
-});
-
-// NAVBAR 2
+// GALLERY 2
 
 $(document).ready(function() {
   $(".gallery-2").on("mouseleave", function() {
@@ -90,7 +61,29 @@ $(document).ready(function() {
   });
 });
 
-// CHARCUTERIE
+// PARALLAX 
+
+window.addEventListener("scroll", function () {
+  const parallaxImage = document.querySelector(".parallax-image");
+  const parallaxContainer = document.querySelector(".parallax-container");
+  const containerHeight = parallaxContainer.offsetHeight;
+  let scrollOffset = window.pageYOffset;
+
+  let parallaxSpeed = 0.3; 
+
+  let parallaxAmount = (scrollOffset * parallaxSpeed); 
+
+  if (parallaxAmount > containerHeight) {
+      parallaxAmount = containerHeight;
+  } else if (parallaxAmount < -containerHeight) {
+      parallaxAmount = -containerHeight; 
+  }
+
+  parallaxImage.style.transform = `translateY(${parallaxAmount}px)`;
+});
+
+
+
 
 
 

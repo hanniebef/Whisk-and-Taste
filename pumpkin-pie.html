@@ -33,101 +33,90 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <div class="pt-2 ps-2">
-          <img src="media-2/WhiskandTaste_logo.png" alt="Whisk and Taste Logo" style="height: 2em;">
-        </div>
-      </a>
-         
-      <div class="navbar-divider"></div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recipes</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Entrées</a></li>
-              <li><a class="dropdown-item" href="#">Meals</a></li>
-              <li><a class="dropdown-item" href="#">Snacks</a></li>
-              <li><a class="dropdown-item" href="#">Sweets</a></li>
-              <li><a class="dropdown-item" href="#">Drinks</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Others</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Diet</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Vegetarian</a></li>
-              <li><a class="dropdown-item" href="#">Vegan</a></li>
-              <li><a class="dropdown-item" href="#">Paleo</a></li>
-              <li><a class="dropdown-item" href="#">Keto</a></li>
-              <li><a class="dropdown-item" href="#">Gluten Free</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li class="dropdown-item dropdown-submenu">
-                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Others</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Pescatarian</a></li>
-                  <li><a class="dropdown-item" href="#">Lactose Free</a></li>
-                  <li><a class="dropdown-item" href="#">Carnivore</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button type="button" class="btn btn-outline-custom">Search</button>
-        </form>
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color: var(--white); z-index: 1050;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <div class="pt-2 ps-2">
+        <img src="media-2/WhiskandTaste_logo.png" alt="Whisk and Taste Logo" style="height: 2em;">
       </div>
+    </a>
+
+    <div class="navbar-divider"></div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+      aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recipes</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Entrées</a></li>
+            <li><a class="dropdown-item" href="#">Meals</a></li>
+            <li><a class="dropdown-item" href="#">Snacks</a></li>
+            <li><a class="dropdown-item" href="#">Sweets</a></li>
+            <li><a class="dropdown-item" href="#">Drinks</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Others</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Diet</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Vegetarian</a></li>
+            <li><a class="dropdown-item" href="#">Vegan</a></li>
+            <li><a class="dropdown-item" href="#">Paleo</a></li>
+            <li><a class="dropdown-item" href="#">Keto</a></li>
+            <li><a class="dropdown-item" href="#">Gluten Free</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li class="dropdown-item dropdown-submenu">
+              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Others</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Pescatarian</a></li>
+                <li><a class="dropdown-item" href="#">Lactose Free</a></li>
+                <li><a class="dropdown-item" href="#">Carnivore</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button type="button" class="btn btn-outline-custom">Search</button>
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
+<div class="border-bottom-line"></div>
+
+<!-- PARALLAX -->
+
+<div class="parallax-container">
+  <div class="parallax-image-wrapper">
+      <img src="media-2/pumpkin-pie-1-2.jpg" alt="Pumpkin Pie" class="parallax-image">
+  </div>
   
-  <div class="border-upper-line"></div>
-
-<!-- IMAGEN 2 -->
-<div class="p-0 min-vh-50 d-flex align-items-center">
-    <div class="justify-content-center align-items-center w-100" data-aos="fade-up">
-        <div class="col-12 p-5">
-            <div class="row" style="margin: 0; display: flex; justify-content: center; align-items: center;">
-                <!-- Contenedor para centrar los dos elementos horizontal y verticalmente -->
-                <div class="col-md-6 d-flex align-items-center justify-content-center">
-                    <h1 class="F500 mb-0"> GRANDMA'S <br> PUMPKIN PIE</h1>
-                </div>
-
-                <div class="col-md-5 d-flex align-items-center justify-content-center"> 
-                    <p class="pfrontdos mb-0" style="max-width: 100%;">
-                        A golden, flaky-crusted pumpkin pie, rich and creamy with a velvety filling of roasted pumpkin, cinnamon, nutmeg, and a hint of brown sugar. Each bite melts in your mouth, with warm, comforting spices balanced to perfection.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="parallax-content">
+      <div class="row text-center">
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+              <h1 class="F500 mb-0">GRANDMA'S <br> PUMPKIN PIE</h1>
+          </div>
+          <div class="col-md-5 d-flex align-items-center justify-content-center">
+              <p class="f400 mb-0">
+                  A golden, flaky-crusted pumpkin pie, rich and creamy with a velvety filling of roasted pumpkin, cinnamon, nutmeg, and a hint of brown sugar. Each bite melts in your mouth, with warm, comforting spices balanced to perfection.
+              </p>
+          </div>
+      </div>
+  </div>
 </div>
 
-<div class="border-bottom-line" style="margin-bottom: 0.3em;"></div>
 
-<!-- FOTO -->
-<div class="d-flex justify-content-center" style="margin-top: 0.4em;">
-    <div class="reveal image-container" style="width: 100vw; max-width: 100%;"> 
-        <img src="media-2/pumpkin-pie-1-2.jpg" 
-             class="img-fluid" 
-             alt="Pumpkin Pie"
-             style="width: 100vw; height: auto; max-height: 500px; object-fit: cover;"> 
-    </div>
-</div>
-<div class="border-bottom-line"></div> 
 
 
 <!-- DEBAJO DE LA IMAGEN -->
