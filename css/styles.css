@@ -665,6 +665,17 @@ body .container {
   font-weight: 400;
 }
 
+.left-border {
+  border-left-width: none;
+  border-left-style: none;
+  border-left-color: none;
+}
+
+  .col-md-6.d-flex.align-items-start.justify-content-center.row.left-border {
+      margin-top: 3em;
+  }
+
+
 }
 
 
