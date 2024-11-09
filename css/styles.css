@@ -587,7 +587,7 @@ body .container {
 }
 
 .btn-gallery {
-  background-color: none;
+  background-color: transparent;
   color: white;
   border: 1px solid white;
   margin-top: 5px;
@@ -599,13 +599,13 @@ body .container {
 }
 
 .btn-gallery:hover {
-  background-color: none;
+  background-color: transparent;
   color: white;
   border: 1px solid white;
 }
 
 .gallery-2:hover .btn-gallery {
-  background-color: none;
+  background-color: transparent;
   color: white;
   border: 1px solid white;
 }
@@ -723,9 +723,9 @@ body .container {
 }
 
 .left-border {
-  border-left-width: none;
+  border-left-width: 0;
   border-left-style: none;
-  border-left-color: none;
+  border-left-color: transparent;
 }
 
   .col-md-6.d-flex.align-items-start.justify-content-center.row.left-border {
