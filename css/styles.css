@@ -671,6 +671,44 @@ body .container {
   z-index: 0;
 }
 
+/* CONTACT */
+
+.accordion-button {
+  color: #333333;
+  background-color: #f9f2e6;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #eae3d0;
+}
+.carousel-caption h5 {
+  color: #333333;
+}
+
+#contact {
+  padding-top: 5.7em;
+}
+
+.accordion-button {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.accordion-body {
+  background-color: var(--white);
+  color: var(--black)
+}
+
+.accordion-button {
+  color: var(--white) !important; 
+}
+
+
+
 
 /* RESPONSIVE */
 
