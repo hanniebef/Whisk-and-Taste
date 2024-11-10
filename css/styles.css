@@ -680,9 +680,6 @@ body .container {
 .accordion-button:not(.collapsed) {
   background-color: #eae3d0;
 }
-.carousel-caption h5 {
-  color: #333333;
-}
 
 #contact {
   padding-top: 5.7em;
@@ -707,6 +704,11 @@ body .container {
   color: var(--white) !important; 
 }
 
+.carousel-inner img {
+  width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
+  height: 400px; /* Ajusta la altura que desees */
+  object-fit: cover; /* Mantiene la relación de aspecto sin deformarse y cubre todo el espacio disponible */
+}
 
 
 
@@ -777,6 +779,9 @@ body .container {
       margin-top: 3em;
   }
 
+.colizq {
+  margin-top: 0 !important;
+}
 
 }
 
